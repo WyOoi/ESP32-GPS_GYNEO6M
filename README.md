@@ -4,7 +4,7 @@ This project is developed from the previous version, V1.0 from the Esp32 webserv
 
 ## Table of Contents
 1. [Download](#Download)
-2. [Usage](#Usage)
+2. [Web Setup](#Web_Setup)
 3. [Features](#features)
 4. [Documentation](#documentation)
 5. [Contributing](#contributing)
@@ -19,9 +19,9 @@ This project is developed from the previous version, V1.0 from the Esp32 webserv
    ```bash
    git clone https://github.com/username/project-name.git
 
-## Usage
+## Web_Setup
 
-### Step (using git clone)
-1. Clone the repository:
+### Step 1
+1. Account registration for AwardSpace free web hosting:
    ```bash
-   git clone https://github.com/username/project-name.git
+   https://www.awardspace.com/
