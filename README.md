@@ -21,7 +21,7 @@ This project is developed from the previous version, V1.0 from the Esp32 webserv
 ### Step (using git clone)
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/project-name.git
+   git clone https://github.com/WyOoi/GPS_Tracking.git
 
 ## Web_Setup
 
