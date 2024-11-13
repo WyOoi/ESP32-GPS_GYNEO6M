@@ -25,4 +25,4 @@ This project is developed from the previous version, V1.0 from the Esp32 webserv
 1. Account registration for AwardSpace free web hosting:
 [Link text](https://www.awardspace.com/)
 
-2. After done Login, go to:
+2. After done login, go to the "Hosting Tools"(beside Dashboard) >> 
