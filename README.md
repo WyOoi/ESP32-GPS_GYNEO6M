@@ -32,14 +32,18 @@ This project is developed from the previous version, V1.0 from the Esp32 webserv
 
 2. After done login, go to the "Hosting Tools"(beside Dashboard)
 <div align="center">
-   <img src="PNG/Step1.png" alt="Step 1 with Arrow">
+   <img src="PNG/Step1.png" alt="Step 1">
 </div>
 
 3. Go to create a subdomain
 <div align="center">
-   <img src="PNG/Step1a.png" alt="Step 1 with Arrow">
+   <img src="PNG/Step1a.png" alt="Step 1a">
 </div>
 
+4. Click open website under the status, if successfully open then proceed to next step.
+<div align="center">
+   <img src="PNG/Step1b.png" alt="Step 1b">
+</div>
 
 ### Step 2: Create database
 1. Acco
