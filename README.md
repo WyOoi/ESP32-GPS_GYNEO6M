@@ -4,7 +4,7 @@ This project is developed from the previous version, V1.0 from the Esp32 webserv
 
 ## Table of Contents
 1. [Download](#Download)
-2. [Usage](#usage)
+2. [Usage](#Usage)
 3. [Features](#features)
 4. [Documentation](#documentation)
 5. [Contributing](#contributing)
@@ -13,6 +13,13 @@ This project is developed from the previous version, V1.0 from the Esp32 webserv
 8. [Website Address](#Website_address)
 
 ## Download
+
+### Step (using git clone)
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/username/project-name.git
+
+## Usage
 
 ### Step (using git clone)
 1. Clone the repository:
