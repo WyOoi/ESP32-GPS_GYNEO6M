@@ -21,20 +21,15 @@ long interval = 30000;
 
 SoftwareSerial neogps(16, 17);
 TinyGPSPlus gps;
-//NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
 
 void setup() {
-  
-  //MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
   Serial.begin(115200);
   Serial.println("esp32 serial initialize");
 
   neogps.begin(9600);
   Serial.println("neogps serial initialize");
   delay(1000);
-   //MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
   
-  //MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
   WiFi.begin(ssid, password);
   Serial.println("Connecting");
   while(WiFi.status() != WL_CONNECTED) { 
@@ -44,12 +39,11 @@ void setup() {
   Serial.println("");
   Serial.print("Connected to WiFi network with IP Address: ");
   Serial.println(WiFi.localIP());
-  //MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-  
 }
 
 void loop() {
-  if(WiFi.status()== WL_CONNECTED){//Check WiFi connection status
+  //Check WiFi connection status
+  if(WiFi.status()== WL_CONNECTED){
     unsigned long currentMillis = millis();
     if(currentMillis - previousMillis > interval) {
        previousMillis = currentMillis;
@@ -63,10 +57,8 @@ void loop() {
   delay(1000);  
 }
 
-
 int sendGpsToServer()
 {
-  //NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
   //Can take up to 60 seconds
   boolean newData = false;
   for (unsigned long start = millis(); millis() - start < 2000;){
@@ -79,34 +71,23 @@ int sendGpsToServer()
       }
     }
   }
-  //NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
   String latitude;
   latitude = String(gps.location.lat(), 6); // Latitude in degrees (double)
-  //MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+
   //If newData is true
   if(true && latitude != "0.000000"){
     newData = false;
-  
-    //NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
-    String latitude, longitude;
-    //float altitude;
-    //unsigned long date, time, speed, satellites;
     
+    String latitude, longitude;
+
     latitude = String(gps.location.lat(), 6); // Latitude in degrees (double)
     longitude = String(gps.location.lng(), 6); // Longitude in degrees (double)
 
-    //altitude = gps.altitude.meters(); // Altitude in meters (double)
-    //date = gps.date.value(); // Raw date in DDMMYY format (u32)
-    //time = gps.time.value(); // Raw time in HHMMSSCC format (u32)
-    //speed = gps.speed.kmph();
-    
     //Serial.print("Latitude= "); 
     //Serial.print(latitude);
     //Serial.print(" Longitude= "); 
     //Serial.println(longitude);
-  //NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
 
-  //NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
     HTTPClient http;
     
     //domain name with path
@@ -125,21 +106,11 @@ int sendGpsToServer()
     Serial.print("gps_data: ");
     Serial.println(gps_data);
     //----------------------------------------------
-
-    //----------------------------------------------
+  
     //Send HTTP POST Request and get response
     int httpResponseCode = http.POST(gps_data);
     String httpResponseString = http.getString();
-    //----------------------------------------------
-
-    //--------------------------------------------------------------------------------
-    // If you need an HTTP request with a content type: text/plain
-    //http.addHeader("Content-Type", "text/plain");
-    //int httpResponseCode = http.POST("Hello, World!");
-    
-    // If you need an HTTP request with a content type: application/json, use the following:
-    //http.addHeader("Content-Type", "application/json");
-    //int httpResponseCode = http.POST("{\"value1\":\"19\",\"value2\":\"67\",\"value3\":\"78\"}");
+  
     //--------------------------------------------------------------------------------
     if (httpResponseCode>0) {
       Serial.print("HTTP Response code: ");
@@ -151,9 +122,6 @@ int sendGpsToServer()
       Serial.println(httpResponseCode);
       Serial.println(httpResponseString);
     }
-    //----------------------------------------------
-    // Free resources
     http.end();
-    //NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN 
   }//end if(true)  
 }
