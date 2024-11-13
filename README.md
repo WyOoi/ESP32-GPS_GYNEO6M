@@ -26,10 +26,16 @@ This project is developed from the previous version, V1.0 from the Esp32 webserv
 [Link text](https://www.awardspace.com/)
 
 
-2. After done login, go to the "Hosting Tools"(beside Dashboard) >>
+2. After done login, go to the "Hosting Tools"(beside Dashboard)
 <div align="center">
    <img src="PNG/Step1.png" alt="Step 1 with Arrow">
 </div>
+
+3. Go to create a subdomain
+<div align="center">
+   <img src="PNG/Step1a.png" alt="Step 1 with Arrow">
+</div>
+
 
 ### Step 2: Create database
 1. Acco
