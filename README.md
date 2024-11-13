@@ -13,11 +13,7 @@ This project is developed from the previous version, V1.0 from the Esp32 webserv
 
 ## Download
 
-### Prerequisites
-- Requirement 1
-- Requirement 2
-
-### Steps
+### Step (using git clone)
 1. Clone the repository:
    ```bash
    git clone https://github.com/username/project-name.git
