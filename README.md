@@ -42,7 +42,7 @@ This project is developed from the previous version, V1.0 from the Esp32 webserv
 
 4. Click open website under the status, if successfully open then proceed to next step.
 <div align="center">
-   <img src="PNG/Step1b.png" alt="Step 1b">
+   <img src="PNG/step1b.png" alt="Step 1b">
 </div>
 
 ### Step 2: Create database
