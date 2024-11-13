@@ -23,5 +23,6 @@ This project is developed from the previous version, V1.0 from the Esp32 webserv
 
 ### Step 1
 1. Account registration for AwardSpace free web hosting:
-   ```bash
-   https://www.awardspace.com/
+[Link text](https://www.awardspace.com/)
+
+2. After done Login, go to:
