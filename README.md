@@ -26,7 +26,7 @@ This project is developed from the previous version, V1.0 from the Esp32 webserv
 [Link text](https://www.awardspace.com/)
 
 2. After done login, go to the "Hosting Tools"(beside Dashboard) >>
-![Step A](PNG/Step1.png)
+   (PNG/Step1.png)
 
 ### Step 2: Create database
 1. Acco
