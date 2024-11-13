@@ -3,37 +3,22 @@
 #include <HTTPClient.h>
 #include <SoftwareSerial.h>
 
-//NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
 //enter WIFI credentials
-const char* ssid     = "iPhone 30 Pro Max";
-const char* password = "123456789";
-//NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+const char* ssid     = "replace with your WiFi name";
+const char* password = "replace with your password";
 
-
-//NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
 //enter domain name and path
 //http://www.example.com/gpsdata.php
-const char* SERVER_NAME = "http://bustrackerutem.atwebpages.com/gpsdata.php";
+const char* SERVER_NAME = "http://abc.atwebpages.com/gpsdata.php";
 
 //ESP32_API_KEY is the exact duplicate of, ESP32_API_KEY in config.php file
 //Both values must be same
 String ESP32_API_KEY = "Ad5F10jkBM0";
-//NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
 
-
-//NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
 //Send an HTTP POST request every 30 seconds
 unsigned long previousMillis = 0;
 long interval = 30000;
-//NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
 
-
-//NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
-//GSM Module RX pin to ESP32 2
-//GSM Module TX pin to ESP32 4
-// #define rxPin 2
-// #define txPin 4
-// HardwareSerial neogps(1);
 SoftwareSerial neogps(16, 17);
 TinyGPSPlus gps;
 //NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
