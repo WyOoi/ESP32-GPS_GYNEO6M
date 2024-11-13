@@ -21,8 +21,12 @@ This project is developed from the previous version, V1.0 from the Esp32 webserv
 
 ## Web_Setup
 
-### Step 1
+### Step 1: Create SubDomain
 1. Account registration for AwardSpace free web hosting:
 [Link text](https://www.awardspace.com/)
 
-2. After done login, go to the "Hosting Tools"(beside Dashboard) >> 
+2. After done login, go to the "Hosting Tools"(beside Dashboard) >>
+3. 
+
+### Step 2: Create database
+1. Acco
