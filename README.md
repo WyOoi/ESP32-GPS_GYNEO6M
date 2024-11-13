@@ -27,7 +27,9 @@ This project is developed from the previous version, V1.0 from the Esp32 webserv
 
 
 2. After done login, go to the "Hosting Tools"(beside Dashboard) >>
-![Step B](PNG/Step1.png)
+<div align="center">
+   <img src="PNG/Step1.png" alt="Step 1 with Arrow">
+</div>
 
 ### Step 2: Create database
 1. Acco
