@@ -47,3 +47,11 @@ This project is developed from the previous version, V1.0 from the Esp32 webserv
 
 ### Step 2: Create database
 1. Go to MySQL database 
+
+## License
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+Copyright (C) 2024 WyOoi
+-   Licensed under the GNU General Public License v3.0 (the "License").
+-   You may not use this project or any file except in compliance with the License.
+-   You may obtain a copy of the License at [https://www.gnu.org/licenses/#GPL](https://www.gnu.org/licenses/#GPL).
