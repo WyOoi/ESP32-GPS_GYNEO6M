@@ -1,6 +1,6 @@
 # UTeM Bus Tracking System
 
-This project is developed from the previous version, V1.0 from the Esp32 webserver to create a domain for the http website in this version. It is created to participate in the UTeM Smart Campus Challenge with the collaboration with two friend from other course. Thanks for the effort from two team members, the project managed to get the Third price award and Best Design Award.
+This project is developed from the previous version, V1.0 from the Esp32 webserver to create a domain for the http website in this version. It is created to participate in the UTeM Smart Campus Challenge with the collaboration with two friend from other course. Thanks for the effort from two team members, the project managed to get the Third place award and Best Design Award.
 
 <div align="center">
    <img src="PNG/web.png" alt="map">
