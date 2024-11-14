@@ -46,4 +46,4 @@ This project is developed from the previous version, V1.0 from the Esp32 webserv
 </div>
 
 ### Step 2: Create database
-1. Acco
+1. Go to MySQL database 
